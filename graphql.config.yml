@@ -1,0 +1,10 @@
+schema:
+  - "https://app-uat.riyalto.com/graphql/"
+documents:
+  - "./apollo/**/*.ts"
+generates:
+  ./src/graphql/graphql.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
